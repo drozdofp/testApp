@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/tv_title_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_news_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/tv_publication_date_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/tv_content_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
